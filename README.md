@@ -115,13 +115,19 @@ mvn test -Pios -DdeviceName="iPhone SE (3rd generation)" -DplatformVersion="17.4
 ```bash
 Automation-Test-Mobile-Browser/
 ```
-│
+  │
+
 ├── drivers/                # Folder to store your Chromedriver for Android
-├── src/                    
-│   ├── android/            # Test scripts for Android devices
-│   └── ios/                # Test scripts for iOS devices
-├── pom.xml                 # Maven project file for dependencies
+
+├── src/test/java/com.test.example
+
+│   ├── LoginTest.java           # Test scripts
+
+├── pom.xml                 # Maven project file for dependencies, plugin and profile
+
 └── README.md               # Project documentation
-Contributing
+
+-------------------------------
+## Contributing
 Feel free to submit pull requests for enhancements or bug fixes. Please ensure code changes are properly tested.
 
