@@ -106,7 +106,7 @@ appium
 ```bash
 mvn test -Pios -DdeviceName="iPhone SE (3rd generation)" -DplatformVersion="17.4"
 ```
-for real device u need, disable simulator mode, add this -DuseSimulator="false".
+For real device testing need to disable simulator mode, add this -DuseSimulator="false".
 ```bash
 mvn test -Pios -DdeviceName="iPhone SE (3rd generation)" -DplatformVersion="17.4" -DuseSimulator="false"
 ```
@@ -115,16 +115,11 @@ mvn test -Pios -DdeviceName="iPhone SE (3rd generation)" -DplatformVersion="17.4
 ```bash
 Automation-Test-Mobile-Browser/
 ```
-  │
-
+|
 ├── drivers/                # Folder to store your Chromedriver for Android
-
 ├── src/test/java/com.test.example
-
 │   ├── LoginTest.java           # Test scripts
-
 ├── pom.xml                 # Maven project file for dependencies, plugin and profile
-
 └── README.md               # Project documentation
 
 -------------------------------
