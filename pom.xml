@@ -13,24 +13,81 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-<dependencies>
-    <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
-    <dependency>
-        <groupId>io.appium</groupId>
-        <artifactId>java-client</artifactId>
-        <version>9.3.0</version>
-    </dependency>
-    <dependency>
-        <groupId>org.testng</groupId>
-        <artifactId>testng</artifactId>
-        <version>6.14.3</version>
-        <scope>test</scope>
-    </dependency>
-    <dependency>
-        <groupId>org.testng</groupId>
-        <artifactId>testng</artifactId>
-        <version>6.14.3</version>
-        <scope>test</scope>
-    </dependency>
-</dependencies>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>9.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.14.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.xbean</groupId>
+            <artifactId>xbean-reflect</artifactId>
+            <version>3.7</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <!-- Profil untuk pengujian Android -->
+        <profile>
+            <id>android</id>
+            <properties>
+                <platform>Android</platform>
+                <automationName>UiAutomator2</automationName>
+                <platformVersion></platformVersion>
+                <deviceName></deviceName>
+                <browserName>Chrome</browserName>
+                <chromedriverPath></chromedriverPath>
+            </properties>
+        </profile>
+
+        <!-- Profil untuk pengujian iOS -->
+        <profile>
+            <id>ios</id>
+            <properties>
+                <platform>iOS</platform>
+                <automationName>XCUITest</automationName>
+                <platformVersion></platformVersion>
+                <deviceName></deviceName>
+                <browserName>Safari</browserName>
+                <useSimulator>true</useSimulator>
+            </properties>
+        </profile>
+    </profiles>
+
+    <build>
+        <plugins>
+            <!-- Plugin Maven Surefire untuk menjalankan test dengan sistem property -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.5.0</version>
+                <configuration>
+                    <systemPropertyVariables>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <platform>${platform}</platform>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <automationName>${automationName}</automationName>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <platformVersion>${platformVersion}</platformVersion>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <deviceName>${deviceName}</deviceName>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <browserName>${browserName}</browserName>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <chromedriverPath>${chromedriverPath}</chromedriverPath>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <useSimulator>${useSimulator}</useSimulator>
+                    </systemPropertyVariables>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
