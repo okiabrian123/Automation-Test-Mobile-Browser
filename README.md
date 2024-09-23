@@ -99,16 +99,13 @@ Connect your iOS device with Developer mode enabled.
 ```bash
 appium
 ```
-**Run the tests for iOS:**
+**Run the tests for iOS(simulator):**
+I only created this for the simulator because I don't have a real iOS device.
 *example :*
 - *device Name = iPhone SE (3rd generation)*
 - *OS Version = 17.4*
 ```bash
 mvn test -Pios -DdeviceName="iPhone SE (3rd generation)" -DplatformVersion="17.4"
-```
-For real device testing need to disable simulator mode, add this -DuseSimulator="false".
-```bash
-mvn test -Pios -DdeviceName="iPhone SE (3rd generation)" -DplatformVersion="17.4" -DuseSimulator="false"
 ```
 
 **Repository Structure **
