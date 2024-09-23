@@ -108,7 +108,7 @@ I only created this for the simulator because I don't have a real iOS device.
 mvn test -Pios -DdeviceName="iPhone SE (3rd generation)" -DplatformVersion="17.4"
 ```
 
-**Repository Structure **
+## Repository Structure
 ```bash
 Automation-Test-Mobile-Browser/
 .
