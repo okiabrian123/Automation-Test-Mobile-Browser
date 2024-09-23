@@ -1,4 +1,4 @@
-# Automation Test - Browser Testing on Mobile Devices (Android & iOS)
+# Automation Test With Appium in Java - Browser Testing on Mobile Devices (Android & iOS)
 This repository contains automated test scripts for browser testing on Android and iOS mobile devices using Appium and Selenium. The tests are designed to run on mobile devices, utilizing the Chrome browser for Android and Safari browser for iOS.
 
 ## Prerequisites
