@@ -20,13 +20,13 @@ cd Automation-Test-Mobile-Browser
 ```
 ## Install required dependencies:
 
-### 2. Install dependencies using npm:
+### 1. Install dependencies using npm:
 ```bash
 npm install
 ```
 
 
-### 3. Set up Chromedriver (Android Only)
+### 2. Set up Chromedriver (Android Only)
 
 The Chromedriver is necessary to automate the Chrome browser on Android devices. It must match the version of Chrome installed on your mobile device.
 
@@ -44,13 +44,13 @@ For example, if your mobile Chrome version is 128, download the corresponding dr
 ```
 
 
-### 4. Set up WebDriverAgent (iOS Only):
+### 3. Set up WebDriverAgent (iOS Only):
 
 For testing on iOS, you need to configure WebDriverAgent to work with Safari. Follow the instructions from the official Appium documentation for setting up WebDriverAgent on iOS, or follow my instructions [here](https://github.com/okiabrian123/Automation-Test-Mobile-Browser/blob/main/WebDriverAgent_Setup.md).
 
 
 
-### 5. Set Chromedriver Path in the Script (Android Only):
+### 4. Set Chromedriver Path in the Script (Android Only):
 
 For doing testing in Android, we need update the path to the Chromedriver to match the version you placed in the project. For example:
 
