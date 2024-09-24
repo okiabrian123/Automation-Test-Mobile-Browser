@@ -11,7 +11,7 @@ Before running the tests, ensure you have the following installed on your system
 
 ------------------------------------------------------------------------------------
 ## Setup Instructions
-### 1. Clone the repository:
+### Clone the repository:
 
 
 ```bash
