@@ -47,7 +47,7 @@ For example, if your mobile Chrome version is 128, download the corresponding dr
 
 ### 4. Set up WebDriverAgent (iOS Only):
 
-For testing on iOS, you need to configure WebDriverAgent to work with Safari. Follow the instructions from the official Appium documentation for setting up WebDriverAgent on iOS [here](https://github.com/okiabrian123/Automation-Test-Mobile-Browser/blob/main/WebDriverAgent_Setup.md).
+For testing on iOS, you need to configure WebDriverAgent to work with Safari. Follow the instructions from the official Appium documentation for setting up WebDriverAgent on iOS, or follow my instructions [here](https://github.com/okiabrian123/Automation-Test-Mobile-Browser/blob/main/WebDriverAgent_Setup.md).
 
 
 
