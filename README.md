@@ -17,9 +17,8 @@ Before running the tests, ensure you have the following installed on your system
 ```bash
 git clone https://github.com/okiabrian123/Automation-Test-Mobile-Browser.git
 cd Automation-Test-Mobile-Browser
-Install required dependencies:
 ```
-
+##Install required dependencies:
 
 ### 2. Install dependencies using npm:
 ```bash
